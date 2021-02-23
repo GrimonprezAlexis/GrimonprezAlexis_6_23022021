@@ -25,7 +25,7 @@ Construire un prototype fonctionnel d'un nouveau site web que nous pourrons pré
 HTML, CSS, Javascript, Github
 
 ### Maquette
-[![Fisheye](https://user.oc-static.com/upload/2020/08/14/15974189716945_image2.png "Fisheye")](https://user.oc-static.com/upload/2020/08/18/15977571210897_image2.png "Fisheye")
+[![Fisheye](https://user.oc-static.com/upload/2020/08/18/15977571210897_image2.png "Fisheye")](https://user.oc-static.com/upload/2020/08/18/15977571210897_image2.png "Fisheye")
 
 
 ### Hébergement
