@@ -48,14 +48,17 @@ td, th {
 }
 
 .cta__main {
+  position: fixed;
+  left: 45%;
   display: none;
   justify-content: center;
   padding-top: 1rem;
+  z-index: 99;
 }
 .cta__main__scroll {
   background: #DB8876;
   border-radius: 5px;
-  padding: 0.2rem 0.6rem;
+  padding: 0.2rem 0.8rem;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -66,8 +69,9 @@ td, th {
 .header {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding-top: 2rem;
 }
 .header__logo {
   height: min-content;
@@ -86,6 +90,67 @@ td, th {
 .header__title {
   color: #901C1C;
   font-size: 36px;
+}
+
+.photographer {
+  box-sizing: border-box;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.photographer__img {
+  display: flex;
+  justify-content: center;
+}
+.photographer__img__link img {
+  clip-path: ellipse(40% 30%);
+  width: 300px;
+  height: auto;
+}
+.photographer__img__link h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
+  text-align: center;
+  color: #D3573C;
+  margin-top: -3rem;
+}
+.photographer__text {
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+.photographer__text__localisation {
+  font-size: 13px;
+  line-height: 17px;
+  color: #901C1C;
+}
+.photographer__text__desc {
+  font-size: 10px;
+  line-height: 13px;
+  color: black;
+}
+.photographer__text__price {
+  font-size: 9px;
+  line-height: 12px;
+  color: #757575;
+}
+.photographer__tag {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.7rem;
+}
+.photographer__tag span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #901C1C;
+  margin-left: 0.5rem;
+  border: 1px solid #C4C4C4;
+  padding: 0.15rem 0.5rem;
+  border-radius: 1rem;
 }
 
 html {
@@ -111,7 +176,14 @@ body {
 
 .container {
   max-width: 1920px;
-  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.container__main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 2rem;
 }
 
 ul {
