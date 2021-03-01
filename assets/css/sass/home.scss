@@ -1,0 +1,47 @@
+.cta__main {
+    display: none;
+    justify-content: center;
+    padding-top: 1rem;
+
+    &__scroll {
+        background: $color__secondary-light;
+        border-radius: 5px;
+        padding: .2rem .6rem;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+    }
+}
+
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center; 
+
+    &__logo {
+        height: min-content;
+    }
+
+    &__navigation__list {
+        display: flex;
+        flex-flow: row wrap;
+
+        li {
+            margin-left: .5rem;
+            color: $color__primary;
+            border: 1px solid $color__grey-light;
+            padding: 0.15rem 0.5rem;
+            border-radius: 1rem;
+        }
+    }
+
+    &__title {
+        color:$color__primary;
+        font-size: 36px;
+    }
+}
+
