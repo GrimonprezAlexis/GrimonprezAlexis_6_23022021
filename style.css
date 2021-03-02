@@ -80,13 +80,28 @@ td, th {
   display: flex;
   flex-flow: row wrap;
 }
-.header__navigation__list li {
+.header__navigation__list button {
+  background: none;
   margin-left: 0.5rem;
   color: #901C1C;
   border: 1px solid #C4C4C4;
   padding: 0.15rem 0.5rem;
   border-radius: 1rem;
   font-size: 12px;
+  cursor: pointer;
+}
+.header__navigation__list button:hover {
+  background-color: #C4C4C4;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  color: black;
+}
+.header__navigation__list button:active, .header__navigation__list button.is-checked {
+  background-color: #901C1C;
+  color: white;
+}
+.header__navigation__list button.is-checked {
+  color: white;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
 }
 .header__title {
   color: #901C1C;

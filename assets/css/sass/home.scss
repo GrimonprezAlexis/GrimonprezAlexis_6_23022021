@@ -34,13 +34,30 @@
         display: flex;
         flex-flow: row wrap;
 
-        li {
+        button {
+            background: none;
             margin-left: .5rem;
             color: $color__primary;
             border: 1px solid $color__grey-light;
             padding: 0.15rem 0.5rem;
             border-radius: 1rem;
             font-size: 12px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #C4C4C4;
+                text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+                color: black;
+            }
+            &:active,
+            &.is-checked {
+                background-color: #901C1C;
+                color: white;
+            }
+            &.is-checked {
+            color: white;
+            text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+            }
         }
     }
 
