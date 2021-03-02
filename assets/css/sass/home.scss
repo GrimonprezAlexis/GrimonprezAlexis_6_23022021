@@ -40,6 +40,7 @@
             border: 1px solid $color__grey-light;
             padding: 0.15rem 0.5rem;
             border-radius: 1rem;
+            font-size: 12px;
         }
     }
 
@@ -54,6 +55,7 @@
     box-sizing: border-box;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
+    padding-bottom: 4rem;
 
 
     &__img {
@@ -61,10 +63,15 @@
         justify-content: center;
 
         &__link {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+
             img {
-                clip-path: ellipse(40% 30%);  
-                width: 300px;
-                height: auto;
+                clip-path: ellipse(45% 45%);
+                object-fit: cover;
+                width: 200px;
+                height: 200px;
             }
 
             h2 {
@@ -74,7 +81,6 @@
                 line-height: 47px;
                 text-align: center;
                 color: #D3573C;
-                margin-top: -3rem;
             }
         }
     }
